@@ -24,17 +24,18 @@ class UserData extends React.Component{
     render(){
         console.log("rendered");
         const { users } = this.state;
+       
         return(
             <div>
             {users.map((u, index)=>{
                 return(
-                    <div style={{border: "solid black 1px", margin: "100px"}}>
+                    <section style={{border: "solid black 1px", margin: "100px", padding: '50px'}}>
                     <h1 key={index}>
                         {u.name}
                     </h1>
                         <h1 key={index}>{u.login}              
                     </h1>
-                    <img src={u.avatar_url}>
+                    <img key={index} alt="" src={u.avatar_url}>
                     </img>
                     <h1 key={index}>
                         Followers: {u.followers}
@@ -42,7 +43,7 @@ class UserData extends React.Component{
                     <h1 key={index}>
                         Following: {u.following}
                     </h1>
-                    </div>
+                    </section>
                 )
             })}
             </div>
