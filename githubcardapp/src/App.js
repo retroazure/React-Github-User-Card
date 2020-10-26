@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <UserData/>
-      <h1 style={{fontSize:'2rem',fontWeight:'10px'}}>Followers:</h1>
+      <h1 style={{fontSize:'2rem',fontWeight:'10px'}}>Followers</h1>
       <Followers/>
     </div>
   );

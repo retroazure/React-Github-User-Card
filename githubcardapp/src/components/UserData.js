@@ -27,20 +27,20 @@ class UserData extends React.Component{
        
         return(
             <div>
-            {users.map((u, index)=>{
+            {users.map((u)=>{
                 return(
                     <section style={{border: "solid black 1px", margin: "100px", padding: '50px'}}>
-                    <h1 key={index}>
+                    <h1 key={u.id}>
                         {u.name}
                     </h1>
-                        <h1 key={index}>{u.login}              
+                        <h1 key={u.id}>{u.login}              
                     </h1>
-                    <img key={index} alt="" src={u.avatar_url}>
+                    <img key={u.id} alt="" src={u.avatar_url}>
                     </img>
-                    <h1 key={index}>
+                    <h1 key={u.id}>
                         Followers: {u.followers}
                     </h1>
-                    <h1 key={index}>
+                    <h1 key={u.id}>
                         Following: {u.following}
                     </h1>
                     </section>
